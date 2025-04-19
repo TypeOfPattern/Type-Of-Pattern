@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Type of Pattern</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #222;
+    }
+    header {
+      background-color: #5a9bd8;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: scale(1.02);
+    }
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .product-card h3 {
+      margin: 0.5rem;
+    }
+    .product-card a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #5a9bd8;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    footer {
+      background: #eee;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Type of Pattern</h1>
+    <p>There's a pattern for everyone</p>
+  </header>
+
+  <section class="section">
+    <h2>Shop Our T-Shirts</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Design+1" alt="T-shirt 1">
+        <h3>Pattern Tee 1</h3>
+        <a href="#">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Design+2" alt="T-shirt 2">
+        <h3>Pattern Tee 2</h3>
+        <a href="#">Shop Now</a>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Design+3" alt="T-shirt 3">
+        <h3>Pattern Tee 3</h3>
+        <a href="#">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>About</h2>
+    <p>
+      Welcome to Type of Pattern! We're all about wearable art that expresses your unique vibe. Every T-shirt you see here is designed with love and shipped directly to your door through our partner, Tap Stitch.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Connect With Us</h2>
+    <p>
+      Follow us on Instagram, TikTok, and Twitter for drops and behind-the-scenes looks. For inquiries, email us at <strong>hello@typeofpattern.com</strong>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 Type of Pattern. All rights reserved.
+  </footer>
+</body>
+</html>
